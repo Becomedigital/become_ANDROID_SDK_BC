@@ -67,7 +67,7 @@ public class MainBDIV extends PermissionsNeeded
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-        toolbar.setTitle("Acerca el código al respaldo de la cédula");
+        toolbar.setTitle("Cerca del código de barras al respaldo de la cédula");
         imgBtnCancel = toolbar.findViewById(R.id.btnCancel);
         imgBtnCancel.setOnClickListener(view -> {
             setResulUserCanceled();
@@ -119,7 +119,7 @@ public class MainBDIV extends PermissionsNeeded
     private void createCameraSource(boolean autoFocus, boolean useFlash) {
         Context context = getApplicationContext();
         BarcodeDetector barcodeDetector = new BarcodeDetector.Builder(context)
-                .setBarcodeFormats(Barcode.ALL_FORMATS)
+                .setBarcodeFormats(Barcode.PDF417)
                 .build();
         BarcodeTrackerFactory barcodeFactory = new BarcodeTrackerFactory(this);
         barcodeDetector.setProcessor(new MultiProcessor.Builder<>(barcodeFactory).build());
