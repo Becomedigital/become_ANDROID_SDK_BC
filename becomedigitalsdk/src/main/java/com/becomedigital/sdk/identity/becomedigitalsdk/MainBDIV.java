@@ -108,17 +108,6 @@ public class MainBDIV extends PermissionsNeeded
     }
 
 
-    /**
-     * Releases the resources associated with the camera source, the associated detectors, and the
-     * rest of the processing pipeline.
-     */
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (mPreview != null) {
-            mPreview.release();
-        }
-    }
 
     /**
      * Creates and starts the camera.
