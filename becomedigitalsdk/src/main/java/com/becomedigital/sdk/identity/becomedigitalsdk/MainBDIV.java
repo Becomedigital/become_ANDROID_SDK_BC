@@ -67,7 +67,7 @@ public class MainBDIV extends PermissionsNeeded
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-        toolbar.setTitle("Cerca del código de barras al respaldo de la cédula");
+        toolbar.setTitle("Acerca del código de barras al respaldo de la cédula");
         imgBtnCancel = toolbar.findViewById(R.id.btnCancel);
         imgBtnCancel.setOnClickListener(view -> {
             setResulUserCanceled();
