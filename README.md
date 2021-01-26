@@ -3,8 +3,12 @@ SDK para captura del código de barras en la parte posterior de la cédula de ci
 
  ### Configuraciones de Gradle
 
-**1.** Dentro del archivo **_build.gradle_** debe adicionar el siguiente fragmento de código:
+**1.** Dentro del archivo **_build.gradle_** debe agregar las siguientes modificaciones:
 
+    defaultConfig {
+      minSdkVersion 21
+    }
+    
     android {
       compileOptions {
         sourceCompatibility = 1.8
